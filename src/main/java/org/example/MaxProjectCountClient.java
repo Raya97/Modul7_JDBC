@@ -3,16 +3,16 @@ package org.example;
 import java.util.Date;
 
 public class MaxProjectCountClient {
-    private int projectCount; // Нова властивість, кількість проектів
-    private int id; // Унікальний ідентифікатор
-    private String name; // Ім'я клієнта
-    private final Date birthday; // Дата народження
-    private final String level; // Рівень клієнта
-    private final double salary; // Зарплата
-    private final int clientId; // Унікальний ідентифікатор клієнта
-    private int workerId; // Унікальний ідентифікатор працівника
+    private int projectCount; // New property for the number of projects
+    private int id; // Unique identifier
+    private String name; // Client's name
+    private final Date birthday; // Date of birth
+    private final String level; // Client's level
+    private final double salary; // Salary
+    private final int clientId; // Unique client identifier
+    private int workerId; // Unique worker identifier
 
-    // Порожній конструктор для ініціалізації за замовчуванням
+    // Default constructor for initializing with default values
     public MaxProjectCountClient() {
         this.id = 0;
         this.name = "";
@@ -22,7 +22,7 @@ public class MaxProjectCountClient {
         this.clientId = 0;
     }
 
-    // Конструктор класу для ініціалізації всіх властивостей
+    // Class constructor for initializing all properties
     public MaxProjectCountClient(int id, String name, Date birthday, String level, double salary, int clientId, int workerId, int projectCount) {
         this.id = id;
         this.name = name;
@@ -34,9 +34,9 @@ public class MaxProjectCountClient {
         this.projectCount = projectCount;
     }
 
-    // Геттери та сеттери для всіх властивостей
+    // Getters and setters for all properties
 
-    // Геттер та сеттер для дати початку проекту
+    // Getter and setter for project start date
     private Date startDate;
     public Date getStartDate() {
         return startDate;
@@ -46,7 +46,7 @@ public class MaxProjectCountClient {
         this.startDate = startDate;
     }
 
-    // Геттер та сеттер для дати завершення проекту
+    // Getter and setter for project finish date
     private Date finishDate;
     public Date getFinishDate() {
         return finishDate;
@@ -56,7 +56,7 @@ public class MaxProjectCountClient {
         this.finishDate = finishDate;
     }
 
-    // Геттер та сеттер для ідентифікатора проекту
+    // Getter and setter for project identifier
     private int projectId;
     public int getProjectId() {
         return projectId;
@@ -66,7 +66,7 @@ public class MaxProjectCountClient {
         this.projectId = projectId;
     }
 
-    // Геттер та сеттер для унікального ідентифікатора об'єкта
+    // Getter and setter for unique object identifier
     public int getId() {
         return id;
     }
@@ -79,7 +79,7 @@ public class MaxProjectCountClient {
         this.id = id;
     }
 
-    // Геттер та сеттер для імені клієнта
+    // Getter and setter for client's name
     public String getName() {
         return name;
     }
@@ -88,27 +88,27 @@ public class MaxProjectCountClient {
         this.name = name;
     }
 
-    // Геттер для дати народження
+    // Getter for date of birth
     public Date getBirthday() {
         return birthday;
     }
 
-    // Геттер для рівня клієнта
+    // Getter for client's level
     public String getLevel() {
         return level;
     }
 
-    // Геттер для зарплати
+    // Getter for salary
     public double getSalary() {
         return salary;
     }
 
-    // Геттер для унікального ідентифікатора клієнта
+    // Getter for unique client identifier
     public int getClientId() {
         return clientId;
     }
 
-    // Геттер та сеттер для унікального ідентифікатора працівника
+    // Getter and setter for unique worker identifier
     public int getWorkerId() {
         return workerId;
     }
@@ -117,7 +117,7 @@ public class MaxProjectCountClient {
         this.workerId = workerId;
     }
 
-    // Геттер та сеттер для кількості проектів клієнта
+    // Getter and setter for client's project count
     public int getProjectCount() {
         return projectCount;
     }
@@ -126,7 +126,7 @@ public class MaxProjectCountClient {
         this.projectCount = projectCount;
     }
 
-    // Перевизначений метод toString() для представлення об'єкта у вигляді рядка
+    // Overridden toString() method for representing the object as a string
     @Override
     public String toString() {
         return "MaxProjectCountClient{" +
